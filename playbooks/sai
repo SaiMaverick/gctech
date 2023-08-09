@@ -1,0 +1,4 @@
+[dev]
+3.6.90.73 ansible_ssh_user=ec2-user
+
+

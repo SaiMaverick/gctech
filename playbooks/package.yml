@@ -1,0 +1,10 @@
+--- 
+- hosts: all
+  user: root 
+  become: yes
+  tasks: 
+    - name: install maven
+      dnf: 
+        name: maven 
+        state: present
+

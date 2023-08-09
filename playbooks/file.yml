@@ -1,0 +1,10 @@
+--- 
+- hosts: all
+  user: root 
+  become: yes
+  tasks:
+    - name: create a file
+      file: 
+      path: /root/file
+      state: touch
+

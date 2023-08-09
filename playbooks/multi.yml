@@ -1,0 +1,16 @@
+--- 
+- hosts: all
+  become: yes
+  tasks: 
+    - name: install java
+      yum:
+        name: java
+        state: present
+- hosts: all
+  become: yes
+  tasks:
+    - name: install git
+      yum: 
+        name: git
+        state: present
+

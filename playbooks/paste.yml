@@ -1,0 +1,10 @@
+--- 
+- hosts: all
+  user: root 
+  become: yes
+  tasks: 
+    - name: copy files from local to remote
+      copy:  
+        dest: /root/file
+        content: this is ansible class  
+
